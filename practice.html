@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -26,6 +26,10 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/chat.css">
+
+  <!-- <script defer type="text/javascript" src="http://localhost:8000/socket.io/socket.io.js"></script>
+  <script defer type="text/javascript" src="assets/js/client.js"></script> -->
 
 </head>
 
@@ -36,14 +40,14 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="index.html"><img src="assets/img/Codehub (4).png" alt="" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li class="dropdown"><a href="#"><span>Practice</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html">About</a></li>
+          <li class="dropdown active"><a href="practice.html"><span class="active">Practice</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>Topic Wise</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -80,24 +84,9 @@
               <li><a href="#">Drop Down 4</a></li> -->
             </ul>
           </li>
-          <li class="dropdown"><a href="#pricing"><span>Challenges</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li class="dropdown"><a href="#"><span>Upcoming</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Weekly Champs</a></li>
-                  <li><a href="#">Monthly Breads</a></li>
-                  <li><a href="#">Leap League</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>Ongoing</span> <i class="bi"></i></a></li>
-              <li class="dropdown"><a href="#"><span>Past Challenges</span> <i class="bi"></i></a></li>
-              <!-- <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li> -->
-            </ul>
-          </li>
+
           <!-- <li><a class="nav-link scrollto " href="#portfolio">Challenges</a></li> -->
-          <li><a class="nav-link scrollto" href="#">PMU</a></li>
+
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
 
@@ -151,7 +140,7 @@
               <!-- <h4><sup>$</sup>0<span> / month</span></h4> -->
               <h4>Topic Wise</h4>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Practice <i class="bi bi-chevron-right"></i></a>
+                <a href="#practice-problem" class="btn-buy">Practice <i class="bi bi-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -163,7 +152,7 @@
               <!-- <h4><sup>$</sup>19<span> / month</span></h4> -->
               <h4>Level Specific</h4>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Practice <i class="bi bi-chevron-right"></i></a>
+                <a href="#level-specific-problem" class="btn-buy">Practice <i class="bi bi-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -174,15 +163,13 @@
               <!-- <h4><sup>$</sup>29<span> / month</span></h4> -->
               <h4>Platform Specific</h4>
               <div class="btn-wrap">
-                <a href="#" class="btn-buy">Practice <i class="bi bi-chevron-right"></i></a>
+                <a href="#clients" class="btn-buy">Practice <i class="bi bi-chevron-right"></i></a>
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Pricing Section -->
+    </section><!-- End level Section -->
 
 <!-- Practice Problems Section -->
 <section id="practice-problem">
@@ -191,46 +178,186 @@
     <div class="mt-4 mt-md-0">
       <div class="list-group">
         <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">...</p>
+          <h4 class="list-group-item-heading">Basic I/O</h4>
+          <!-- <p class="list-group-item-text">...</p> -->
         </a>
       </div>
       <div class="list-group">
         <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">...</p>
+          <h4 class="list-group-item-heading">Variables and Datatypes</h4>
+          <!-- <p class="list-group-item-text">...</p> -->
         </a>
       </div>
       <div class="list-group">
         <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">...</p>
+          <h4 class="list-group-item-heading">Conditions and Looping</h4>
+          <!-- <p class="list-group-item-text">...</p> -->
         </a>
       </div>
       <div class="list-group">
         <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">...</p>
+          <h4 class="list-group-item-heading">Functions and Pointers</h4>
+          <!-- <p class="list-group-item-text">...</p> -->
+        </a>
+      </div>
+      <div class="list-group">
+        <a href="problem-statement.html" class="list-group-item">
+          <h4 class="list-group-item-heading">Arrays and Strings</h4>
+          <!-- <p class="list-group-item-text">...</p> -->
         </a>
       </div>
       <div class="list-group">
         <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">...</p>
+          <h4 class="list-group-item-heading">Classes and Objects</h4>
+          <!-- <p class="list-group-item-text">...</p> -->
         </a>
       </div>
       <div class="list-group">
         <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">List group item heading</h4>
-          <p class="list-group-item-text">...</p>
+          <h4 class="list-group-item-heading">File Handling and Misc</h4>
+          <!-- <p class="list-group-item-text">...</p> -->
         </a>
       </div>
     </div>
   </div>
-
-
 </section>
 
+<!-- <section id="level-specific-problem">
+  <div class="container">
+    <h2>Level Specific</h2>
+  </div>
+</section> -->
+
+<section id="level-specific-problem" class="pricing section-bg">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Level Specific</h2>
+      <p>Start by choosing your programming level to enhance your coding skills!</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
+          <h3>Level 1</h3>
+          <!-- <h4><sup>$</sup>0<span> / month</span></h4> -->
+          <h4>Beginner</h4>
+          <ul>
+            <li>Basic I/O</li>
+            <li>Variables and Datatypes</li>
+            <li>Conditions and Loops</li>
+            <li>Strings and Operations</li>
+            <li>Arrays</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Practice</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+        <div class="box recommended" data-aos="zoom-in">
+          <!-- <span class="recommended-badge">Recommended</span> -->
+          <h3>Level 2</h3>
+          <!-- <h4><sup>$</sup>19<span> / month</span></h4> -->
+          <h4>Intermediate</h4>
+          <ul>
+            <li>Basics</li>
+            <li>Arrays and Arraylists</li>
+            <li>Vectors</li>
+            <li>Functions</li>
+            <li>Pointers</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Practice</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+        <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
+          <h3>Level 3</h3>
+          <!-- <h4><sup>$</sup>29<span> / month</span></h4> -->
+          <h4>Expert</h4>
+          <ul>
+            <li>Vectors and Functions Types</li>
+            <li>Classes and Objects</li>
+            <li>Inheritence, Encapsulation, Polymophism</li>
+            <li>STL</li>
+            <li>Advanced Topics</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Practice</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="clients" class="clients">
+  <div class="container">
+    <h2>Platform Specific</h2>
+    <div class="row">
+
+      <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in">
+        <a href="https://leetcode.com/"><img src="assets/img/clients/1.png" class="img-fluid" alt=""></a>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+        <a href="https://www.geeksforgeeks.org/"><img src="assets/img/clients/2.png" class="img-fluid" alt=""></a>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+        <a href="https://www.hackerrank.com/"><img src="assets/img/clients/3.png" class="img-fluid" alt=""></a>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+        <a href="https://codeforces.com/"><img src="assets/img/clients/4.png" class="img-fluid" alt=""></a>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+        <a href="https://www.codechef.com/"><img src="assets/img/clients/5.png" class="img-fluid" alt=""></a>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500">
+        <a href="https://www.hackerearth.com/"><img src="assets/img/clients/6.png" class="img-fluid" alt=""></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Chat -->
+<!-- <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup form-container" id="myForm"> -->
+  <!-- <form action="/action_page.php" class="form-container"> -->
+    <!-- <h1>Chat</h1>
+    <div class="pmu-container" id="pmu-container">
+      <div class="message right">
+      </div>
+      <div class="meassage left">
+      </div>
+    </div>
+    <div class="send">
+      <form id="send-container" class="send-container form-container" action="#">
+        <textarea type="text" name="messageInp" id="messageInp"></textarea>
+        <button type="submit" class="btn" name="button">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div> -->
+
+    <!-- <label for="msg"><b>Message</b></label> -->
+    <!-- <textarea placeholder="Type message.." name="msg" required></textarea> -->
+
+    <!-- <button type="submit" class="btn">Send</button> -->
+
+  <!-- </form> -->
+<!-- </div> -->
+<!-- End of Chat Section -->
 
   </main><!-- End #main -->
 
@@ -242,13 +369,9 @@
         &copy; Copyright <strong><span>CodeHub</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-free-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">Mocktic Joshi</a><span> | </span>
-        <a href="https://bootstrapmade.com/">Shruti Rani</a><span> | </span>
-        <a href="https://bootstrapmade.com/">Dev Raj</a>
+        Designed by <a href="">Mocktic Joshi</a><span> | </span>
+        <a href="">Shruti Rani</a><span> | </span>
+        <a href="">Dev Raj</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -262,8 +385,11 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script type="text/javascript"src="assets/js/chat.js">
 
-  <!-- Template Main JS File -->
+  </script>
+
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>

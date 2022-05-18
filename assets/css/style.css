@@ -690,6 +690,12 @@ section {
     opacity: 0;
   }
 }
+
+/* Problem Statement Page */
+.problem-statement .container{
+  height:
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -1014,7 +1020,7 @@ section {
   height: 40px;
   opacity: 0;
   transition: bottom ease-in-out 0.4s;
-  background: rgba(124, 197, 118, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1048,7 +1054,7 @@ section {
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 15px;
-  color: #7cc576;
+  color: #000000;
 }
 .team .member .member-info p {
   font-style: italic;
@@ -1387,11 +1393,33 @@ section {
   }
 }
 
+
+
+/* practice page css style */
+#practice-problem .container h2{
+  margin-bottom: 30px;
+}
+#level-specific-problem .container h2{
+  margin-bottom: 30px;
+}
+.list-group{
+  margin-bottom: 10px;
+}
+.list-group .list-group-item .list-group-item-heading{
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg") center center no-repeat;
+  /* background: url("../img/footer-bg.jpg") center center no-repeat; */
+  background: #000000;
   color: #fff;
   font-size: 14px;
   position: relative;
