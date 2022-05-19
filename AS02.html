@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CodeHub-Practice</title>
+  <title>CodeHub-AS01</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -27,6 +27,9 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/chat.css">
+
+  <script defer type="text/javascript" src="http://localhost:8000/socket.io/socket.io.js"></script>
+  <script defer type="text/javascript" src="assets/js/client.js"></script>
 
 </head>
 
@@ -81,8 +84,9 @@
               <li><a href="#">Drop Down 4</a></li> -->
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="index.html">Team</a></li>
-          <li><a class="nav-link scrollto" href="index.html">FAQ</a></li>
+
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
 
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
         </ul>
@@ -103,74 +107,116 @@
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="practice.html">Practice</a></li>
-            <li>Arrays and Strings</li>
+            <li><a href="problem-statement.html">Arrays and Strings</a></li>
+            <li>AS01</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- <section class="inner-page">
-      <div class="container">
-        <p>
-          Example inner page template
-        </p>
-      </div>
-    </section> -->
-
-
 
 <!-- Practice Problems Section -->
 <section id="practice-problem">
   <div class="container">
-    <h2>Arrays and Strings Questions</h2>
+    <h2>Strong Password</h2>
     <div class="mt-4 mt-md-0">
       <div class="list-group">
-        <a href="as01.html" class="list-group-item">
-          <h4 class="list-group-item-heading">Weighted Uniform Strings</h4>
-          <p class="list-group-item-text">PS CODE: AS01 | HackerRank</p>
-        </a>
-      </div>
-      <div class="list-group">
-        <a href="as02.html" class="list-group-item">
-          <h4 class="list-group-item-heading">Strong Password</h4>
-          <p class="list-group-item-text">PS CODE: AS02 | Leetcode</p>
-        </a>
-      </div>
-      <div class="list-group">
-        <a href="as01.html" class="list-group-item">
-          <h4 class="list-group-item-heading">Big Sorting</h4>
-          <p class="list-group-item-text">PS CODE: AS03 | CodeChef</p>
-        </a>
-      </div>
-      <div class="list-group">
-        <a href="as01.html" class="list-group-item">
-          <h4 class="list-group-item-heading">HackerRank in a String!</h4>
-          <p class="list-group-item-text">PS CODE: AS04 | HackerRank</p>
-        </a>
-      </div>
-      <div class="list-group">
-        <a href="as01.html" class="list-group-item">
-          <h4 class="list-group-item-heading">Caesar Cipher</h4>
-          <p class="list-group-item-text">PS CODE: AS05 | HackerRank</p>
-        </a>
-      </div>
-      <div class="list-group">
-        <a href="as01.html" class="list-group-item">
-          <h4 class="list-group-item-heading">Bit Array</h4>
-          <p class="list-group-item-text">PS CODE: AS06 | Leetcode</p>
-        </a>
-      </div>
-      <div class="list-group">
-        <a href="as01.html" class="list-group-item">
-          <h4 class="list-group-item-heading">Variable Sized Arrays</h4>
-          <p class="list-group-item-text">PS CODE: AS07 | HackerEarth</p>
+        <a href="#" class="list-group-item">
+          <!-- <h4 class="list-group-item-heading">Weighted Uniform Strings</h4> -->
+          <p class="list-group-item-text">PS CODE: AS02</p>
+          <!-- <iframe src="https://www.hackerrank.com/challenges/weighted-uniform-string/problem?isFullScreen=false"></iframe> -->
+          <img src="assets\img\Question\as011.png" alt="">
+          <img src="assets\img\Question\as012.png" alt="">
+          <img src="assets\img\Question\as013.png" alt="">
+          <img src="assets\img\Question\as014.png" alt="">
+          <img src="assets\img\Question\as015.png" alt="">
         </a>
       </div>
     </div>
   </div>
 </section>
 
+<section id="faq" class="faq">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Answer to the Problem</h2>
+    </div>
+
+    <ul class="faq-list">
+
+      <li data-aos="fade-up">
+        <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">Click Here to see the Solution<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+        <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+          <pre>
+            // {Driver Code Starts
+            #include  &lt;bits/stdc++.h&gt;
+            using namespace std;
+            //Weighted Uniform Strings //Hackerrank //string
+            unordered_set&lt;int&gt; st;
+            int main(){
+                string s;
+                cin>>s;
+                int n;
+                cin>>n;
+                int queries[n];
+                for(int i=0; i &lt;n; ++i)
+                cin>>queries[i];
+                int j=0;
+                // cout<<"\n\n";
+                for(int i=0; i&lt;s.length(); ++i){
+                    int temp=i;
+                    while(s[temp]==s[i]){
+                        st.insert((temp-i+1)*(s[i]-'a'+1));
+                        temp++;
+                    }
+                    i=--temp;
+                }
+                // for(auto itr=st.begin(); itr!=st.end(); ++itr){
+                //     cout<<(*itr)&lt;&lt;endl;
+                // }
+                for(int i=0; i&lt;n; i++){
+                    auto fnd=st.find(queries[i]);
+                    fnd==st.end()?cout<<"No\n":cout<<"Yes\n";
+                      }
+                  }
+
+        </pre>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Chat -->
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup form-container" id="myForm">
+  <!-- <form action="/action_page.php" class="form-container"> -->
+    <h1>Chat</h1>
+    <div class="pmu-container" id="pmu-container">
+      <div class="message right">
+      </div>
+      <div class="meassage left">
+      </div>
+    </div>
+    <div class="send">
+      <form id="send-container" class="send-container form-container" action="#">
+        <textarea type="text" name="messageInp" id="messageInp"></textarea>
+        <button type="submit" class="btn" name="button">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+    <!-- <label for="msg"><b>Message</b></label> -->
+    <!-- <textarea placeholder="Type message.." name="msg" required></textarea> -->
+
+    <!-- <button type="submit" class="btn">Send</button> -->
+
+  <!-- </form> -->
+</div>
+<!-- End of Chat Section -->
 
   </main><!-- End #main -->
 
@@ -182,6 +228,10 @@
         &copy; Copyright <strong><span>CodeHub</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-free-bootstrap-theme/ -->
         Designed by <a href="">Mocktic Joshi</a><span> | </span>
         <a href="">Shruti Rani</a><span> | </span>
         <a href="">Deo Raj</a>
