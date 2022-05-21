@@ -1,0 +1,18 @@
+body{
+  background: linear-gradient(rgba(255, 255, 255), purple);
+}
+
+.container{
+  width: 955px;
+  background-color: red;
+  height: 512px;
+  margin: auto;
+}
+.left{
+  float:left;
+  clear: both;
+}
+.right{
+  float: right;
+  clear: both;
+}
